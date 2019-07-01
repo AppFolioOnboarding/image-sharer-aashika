@@ -13,7 +13,7 @@ class ImagesController < ApplicationController
   end
 
   def index
-    @image = Image.new
+    @images = Image.all.order(created_at: :desc)
   end
 
   def show
