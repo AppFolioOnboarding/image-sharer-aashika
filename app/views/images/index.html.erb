@@ -1,1 +1,3 @@
-<h1>Image Index!</h1>
+<% @images.each do |item| %>
+  <%= image_tag(item.url, :size => "400x400") %>
+<% end %>
